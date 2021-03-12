@@ -1635,6 +1635,25 @@ router.get('/covidindo', async (req, res, next) => {
 })
 })
 
+router.get('/news', async (req, res, next) => {
+        var apikeyInput = req.query.apikey
+            
+	if(!apikeyInput) return res.json(loghandler.notparam)
+	if(apikeyInput != 'anu') return res.json(loghandler.invalidKey)
+
+       fetch(encodeURI(`http://newsapi.org/v2/top-headlines?country=id&apiKey=b2d3b1c264c147ae88dba39998c23279`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data;
+             res.json({
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+})
+
 
 router.get('/covidworld', async (req, res, next) => {
         var apikeyInput = req.query.apikey
