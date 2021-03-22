@@ -601,7 +601,7 @@ router.get('/textmaker/game', async (req, res, next) => {
         	if (!text2) return res.json(loghandler.nottext2)
             try {
             request.post({
-                url: "https://photooxy.com/battlegrounds/make-wallpaper-battlegrounds-logo-text-146.html",
+                url: "https://photooxy.com/cross-fire/nice-cross-fire-cover-137.html",
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 },
