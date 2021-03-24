@@ -723,10 +723,10 @@ router.get('/textmaker/senja', async (req, res, next) => {
                 	console.log(e);
                 res.json(loghandler.error)
                 }
-		if (theme == 'party') {
+		if (theme == 'star') {
             try {
             request.post({
-                url: "https://photooxy.com/logo-and-text-effects/create-party-neon-text-effect-161.html",
+                url: "https://photooxy.com/logo-and-text-effects/write-stars-text-on-the-night-sky-200.html",
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 },
