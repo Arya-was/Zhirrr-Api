@@ -726,7 +726,7 @@ router.get('/textmaker/senja', async (req, res, next) => {
                 }
         } else if (theme == 'coffee-cup2') {
             request.post({
-                url: "https://photooxy.com/logo-and-text-effects/put-your-text-on-a-coffee-cup--174.html",
+                url: "https://photooxy.com/logo-and-text-effects/gradient-avatar-text-effect-207.html",
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 },
